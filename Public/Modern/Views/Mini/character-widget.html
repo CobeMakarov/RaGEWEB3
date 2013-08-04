@@ -1,0 +1,15 @@
+<div class="row-fluid">
+	<div class="span6">
+		<img src="http://www.habbo.nl/habbo-imaging/avatarimage?figure=${character->look}&direction=2&head_direction=3&gesture=sml" />
+	</div>
+	<div class="span6">
+		<b>${character->username}</b> <br>
+		<i>${character->motto}</i> <br>
+		<b>${character->credits}</b> <img src="./Public/Modern/Images/credit.png" /> <br><br>
+		<button type="button" class="btn btn-info" id="activate-user" user="${character->string}">Play</button>
+		<button type="button" class="btn btn-danger" id="delete-user" user="${character->string}">Delete</button>
+	</div>
+</div> 
+<br>
+<hr>
+<br>

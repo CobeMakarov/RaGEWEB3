@@ -1,0 +1,15 @@
+var twitter_dev_modal = '<div class="modal hide fade" id="twitter_dev_modal">';
+twitter_dev_modal += '<div class="modal-header">';
+twitter_dev_modal += '<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>';
+twitter_dev_modal += '<h3>Our Developers</h3>';
+twitter_dev_modal += '</div>';
+twitter_dev_modal += '<div class="modal-body">';
+twitter_dev_modal += '<p>';
+twitter_dev_modal += '<b>TeamChromide</b> consists of several high-profile developers. We specialize in a number of programming languages and techniques. Here we our by our twitter names in no particular order. <br>';
+twitter_dev_modal += '<a href="http://twitter.com/CobeLeDev" target="_blank">@cobeledev</a>, <a href="http://twitter.com/ZakAmirz" target="_blank">@zakamirz</a>, <a href="http://twitter.com/DarkStar851" target="_blank">@darkstar851</a>, <a href="http://twitter.com/adilh_" target="_blank">@adilh_</a>, <a href="https://twitter.com/mikkelbfriis" target="_blank">@mikkelbfriis</a><br>';
+twitter_dev_modal += '</p>';
+twitter_dev_modal += '</div>';
+twitter_dev_modal += '<div class="modal-footer">';
+twitter_dev_modal += '<button type="button" class="btn btn-warning" data-dismiss="modal" aria-hidden="true">Close</button>';
+twitter_dev_modal += '</div>';
+twitter_dev_modal += '</div>';

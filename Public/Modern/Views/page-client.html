@@ -1,0 +1,61 @@
+        <script src="./Public/Modern/JS/client.common.js"></script>
+        <script src="./Public/Modern/JS/client.visual.js"></script>
+        <script src="./Public/Modern/JS/client.library.js"></script>
+        <script src="./Public/Modern/JS/client.library2.js"></script>
+        <script src="./Public/Modern/JS/client.flash.js"></script>
+        
+        <script type="text/javascript">
+        	var habboReqPath = "http://localhost";
+        	
+        	var flashvars = {
+                    "client.allow.cross.domain" : "1", 
+                    "client.notify.cross.domain" : "0",
+                    "connection.info.host" : "127.0.0.1",
+        	    	"connection.info.port" : "30000",
+                    "site.url" : "http://localhost", 
+                    "url.prefix" : "http://localhost", 
+                    "client.reload.url" : "http://localhost", 
+                    "client.fatal.error.url" : "http://localhost/disconnected?reason=error&origin=popup", 
+                    "client.connection.failed.url" : "http://localhost/disconnected?reason=connection_failed&origin=popup", 
+                    "external.variables.txt" : "http://localhost/Public/Flash/gamedata/external_flash_variables.txt?{$rand->number}", 
+                    "external.texts.txt" : "http://localhost/Public/Flash/gamedata/external_flash_texts.txt?{$rand->number}", 
+                    "productdata.load.url" : "http://localhost/Public/Flash/gamedata/productdata.txt?{$rand->number}", 
+                    "furnidata.load.url" : "http://localhost/Public/Flash/gamedata/furnidata.txt?{$rand->number}", 
+                    "safechat.list.txt": "http://localhost/Public/Flash/gamedata/safechat-en.txt?{$rand->number}", 
+                    "use.sso.ticket" : "1", 
+                    "sso.ticket" : "{$user->sso}", 
+                    "processlog.enabled" : "1",
+                    "client.starting" : "{$user->sso}",
+                    "flash.client.url" : "//habbo.hs.llnwd.net/gordon/RELEASE63-201203290918-499482107/", 
+                    "flash.client.origin" : "popup",
+        																																												
+            };
+
+            var params = {
+                "base" : "http://localhost/Public/Flash/gordon/RELEASE63-35255-34886-201108111108/",
+                "allowScriptAccess" : "always",
+                "menu" : "false"                
+            };
+            
+            if (!(HabbletLoader.needsFlashKbWorkaround())) {
+            	params["wmode"] = "opaque";
+            }
+        	
+            var clientUrl = "http://localhost/Public/Flash/gordon/RELEASE63-35255-34886-201108111108/Habbo.swf?{$rand->number}"; 
+            swfobject.embedSWF(clientUrl, "flash-container", "100%", "100%", "10.0.0", "http://173.230.250.55/web-gallery/flash/expressInstall.swf", flashvars, params);
+
+            window.onbeforeunload = unloading;
+            function unloading() {
+                var clientObject;
+                if (navigator.appName.indexOf("Microsoft") != -1) {
+                    clientObject = window["flash-container"];
+                } else {
+                    clientObject = document["flash-container"];
+                }
+                try {
+                    clientObject.unloading();
+                } catch (e) {}
+            }
+        </script>
+
+        <div id="flash-container"></div>

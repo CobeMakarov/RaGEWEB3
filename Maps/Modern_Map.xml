@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<data name="view" version="1">
+
+	<view>
+		<id>index</id>
+
+		<html>page-index</html>
+
+		<css>bootstrap.min</css>
+		<css>bootstrap-responsive.min</css>
+		<css>docs</css>
+		<css>pnotify</css>
+		
+		<js>index</js>
+	</view>
+
+	<view>
+		<id>characters</id>
+
+		<html>page-characters</html>
+
+		<css>bootstrap.min</css>
+		<css>bootstrap-responsive.min</css>
+		<css>docs</css>
+		<css>pnotify</css>
+		
+		<js>character</js>
+	</view>
+
+	<view>
+		<id>me</id>
+
+		<html>page-me</html>
+
+		<css>bootstrap.min</css>
+		<css>bootstrap-responsive.min</css>
+		<css>docs</css>
+		<css>pnotify</css>
+		
+		<js>me</js>
+	</view>
+
+	<view>
+		<id>client</id>
+
+		<html>page-client</html>
+
+		<css>client</css>
+	</view>
+
+	<view>
+		<id>disconnected</id>
+
+		<html>page-disconnected</html>
+
+		<css>bootstrap.min</css>
+		<css>bootstrap-responsive.min</css>
+		<css>docs</css>
+		<css>pnotify</css>
+	</view>
+</data>

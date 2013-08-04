@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<data name="controller">
+
+	<controller>
+		<id>index</id>
+
+		<view>
+			<title>Home</title>
+		</view>
+	</controller>
+
+	<controller>
+		<id>characters</id>
+
+		<view>
+			<title>Characters</title>
+		</view>
+	</controller>
+
+	<controller>
+		<id>me</id>
+
+		<view>
+			<title>Home</title>
+		</view>
+	</controller>
+
+	<controller>
+		<id>client</id>
+
+		<view>
+			<title>Client</title>
+		</view>
+
+		<model>Client</model>
+	</controller>
+
+	<controller>
+		<id>disconnected</id>
+
+		<view>
+			<title>Disconnected</title>
+		</view>
+	</controller>
+</data>

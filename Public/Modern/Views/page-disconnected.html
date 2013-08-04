@@ -1,0 +1,46 @@
+		<style type="text/css">
+			body {
+				background-image: url('./Public/Modern/Images/shattered.png');
+			}
+		</style>
+		<div class="container" style="margin: 0 auto 20px;">
+			<div class="well" style="max-width: 300px;" id="main-form">
+				<div style="margin: auto; text-align: center;">
+					<h2 id="h2">{$error->title}</h2>
+				</div>
+
+				<i>{$error->info}</i>
+
+				<hr>
+					<b>Port</b>: {$error->port} <br>
+					<b>Host</b>: {$error->host} <br>
+					<b>In Room?</b>: {$error->in_room} <br>
+					<b>Last Room ID</b>: {$error->last_room} <br>
+					<b>Agent</b>: {$error->agent} <br>
+					<div style="word-wrap: break-word;">
+						<b>Error</b>: {$error->error_desc} <br>
+					</div>
+				<hr>
+
+				If you would be so kind, please report this error (maybe as a screenshot?) <a href="https://chromide.uservoice.com/">here</a>. <br><br>
+
+				<div class="pull-right">
+					<a href="client" class="btn btn-large btn-primary">Enter HotelChromide</a>
+				</div>
+
+				<div class="clearfix"></div>
+			</div>
+
+			<div class="well" style="max-width: 300px;">
+				<div style="margin: auto; text-align: center; font-size: 18px;" id="full_online_text">
+					Loading Online Count..
+				</div>
+			</div>
+
+			<div style="position: fixed; bottom: 0; right: 0; max-height: 390px;">
+				<img src="./Public/Modern/Images/frontpage_view_{$general->imgkey}.png" style="margin-bottom: 0px;"/>
+			</div>
+			<div style="position: fixed; bottom: 0; left: 0;">
+				Chromide. &copy 2013. <a href="#" id="show_twitter_modal">@developers</a>
+			</div>
+		</div>

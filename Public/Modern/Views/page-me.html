@@ -1,0 +1,61 @@
+		<style type="text/css">
+			body {
+				background-image: url('./Public/Modern/Images/shattered.png');
+			}
+		</style>
+		<div class="container" style="margin: 0 auto 20px;">
+			<div class="well" style="max-width: 300px;" id="main-form">
+				<div style="margin: auto; text-align: center;">
+					<h2 id="h2">{$user->seckey}</h2>
+					<div class="row-fluid">
+						<div class="span4">
+							<div class="pull-left">
+								<img src="http://www.habbo.nl/habbo-imaging/avatarimage?figure={$user->look}&direction=2&gesture=sml&head_direction=3" />
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="span8">
+							<b>{$user->username}</b> <br>
+							<i>{$user->motto}</i> <br>
+							<b>{$user->credits}</b> <img src="./Public/Modern/Images/credit.png" /> <br><br>
+							<button type="button" class="btn btn-success" id="show-badges">Badges</button>
+							<button type="button" class="btn btn-warning" id="show-characters">Characters</button>
+						</div>
+					</div>
+					<br>
+					<div class="row-fluid">
+						<br>
+						<div id="badges" style="display: none">
+							{$user->badges}
+
+							<hr>
+						</div>
+						<div id="characters" style="display: none">
+							{$user->characters}
+
+							<hr>
+						</div>
+					</div>
+				</div>
+
+				<div class="pull-right">
+					<button type="button" class="btn btn-large btn-danger" id="start-logout">Leave</button>
+					<a href="client" class="btn btn-large btn-primary">Enter HotelChromide</a>
+				</div>
+
+				<div class="clearfix"></div>
+			</div>
+
+			<div class="well" style="max-width: 300px;">
+				<div style="margin: auto; text-align: center; font-size: 18px;" id="full_online_text">
+					Loading Online Count..
+				</div>
+			</div>
+
+			<div style="position: fixed; bottom: 0; right: 0; max-height: 390px;">
+				<img src="./Public/Modern/Images/frontpage_view_{$general->imgkey}.png" id="frontpage-img" style="margin-bottom: 0px; display: none;"/>
+			</div>
+			<div style="position: fixed; bottom: 0; left: 0;">
+				Chromide. &copy 2013. <a href="#" id="show_twitter_modal">@developers</a>
+			</div>
+		</div>
